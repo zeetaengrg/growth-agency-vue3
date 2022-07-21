@@ -1,5 +1,5 @@
 <template>
   <section id="contacts-title" class="contacts">
-    Contacts Page
+    <h1>Contacts Page</h1>
   </section>
 </template>

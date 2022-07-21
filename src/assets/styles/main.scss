@@ -1,0 +1,30 @@
+@use "abstracts"as a;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: a.$ff-primary;
+  font-size: a.$fs-base;
+  font-weight: a.$fw-xmedium;
+  line-height: 1.15;
+  color: a.$primary-clr;
+  background-color: a.$secondary-clr;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
