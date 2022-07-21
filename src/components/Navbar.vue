@@ -1,13 +1,13 @@
 <template>
   <header class="header">
-    <figure class="header-logo">
-      <router-link to="/">
+    <router-link to="/">
+      <figure class="header-logo">
         <img class="logo-img" src="../assets/images/logo.svg" alt="Logo">
-      </router-link>
-      <figcaption class="logo-caption">
-        <p class="logo-text">Brands.io</p>
-      </figcaption>
-    </figure>
+        <figcaption class="logo-caption">
+          <p class="logo-text">Brands.io</p>
+        </figcaption>
+      </figure>
+    </router-link>
     <nav class="header-nav">
       <ul>
         <li>
@@ -32,39 +32,29 @@
         </li>
       </ul>
     </nav>
-    <div class="header-login">
-      <router-link to="/login">
-        <button class="btn">Login</button>
-      </router-link>
-    </div>
+    <router-link to="/login" class="header-login">
+      <button class="btn">Login</button>
+    </router-link>
   </header>
 </template>
 
-<script>
-
-export default {
-  name: 'Navbar',
-  components: {
-
-  }
-}
-</script>
-
 <style lang="scss" scoped>
+@use "../assets/styles/abstracts" as a;
+
   .header {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     padding: 1.5rem 4rem;
 
     &-logo {
       display: flex;
-      gap: 0.5rem;
       align-items: center;
+      gap: 0.5rem;
 
       .logo-caption {
         .logo-text {
-          font-weight: 600;
+          font-weight: a.$fw-bold;
         }
       }
     }
@@ -73,24 +63,18 @@ export default {
       ul {
         display: flex;
         gap: 3rem;
-        list-style-type: none;
-
-        li {
-          .nav-link {
-            text-decoration: none;
-          }
-        }
       }
     }
 
     &-login {
       .btn {
         background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%), linear-gradient(106.23deg, #4EF0F0 0%, #05C580 100%);
-        border: none;
         border-radius: 0.3rem;
+        border: none;
         color: #fff;
         cursor: pointer;
-        font-weight: 600;
+        font-weight: a.$fw-medium;
+        font-size: a.$fs-base;
         padding: 0.8rem 1.5rem;
       }
     }
