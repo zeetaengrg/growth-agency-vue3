@@ -9,10 +9,28 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* import specific icons */
-import { faBorderAll, faDownload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBorderAll,
+  faDownload,
+  faHeadset,
+  faComments,
+  faShieldHalved,
+  faPaintRoller,
+  faGlobe,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 /* /* add each imported icon to the library */
-library.add(faBorderAll, faDownload);
+library.add(
+  faBorderAll,
+  faDownload,
+  faHeadset,
+  faComments,
+  faShieldHalved,
+  faPaintRoller,
+  faGlobe,
+  faPenToSquare
+);
 
 const app = createApp(App);
 app.use(store);
