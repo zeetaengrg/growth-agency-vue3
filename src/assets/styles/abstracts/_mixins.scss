@@ -1,0 +1,11 @@
+@use "../abstracts/fonts"as *;
+@use "../abstracts/background-gradient"as *;
+
+// Header Mixin
+@mixin header {
+  font-size: $fs-xlarge;
+  background: $bg-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
