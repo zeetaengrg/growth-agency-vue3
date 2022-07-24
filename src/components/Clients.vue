@@ -14,7 +14,7 @@
 @use "../assets/styles/abstracts" as a;
 
 .clients {
-  margin: 12rem 0rem 7rem;
+  height: 35vh;
   display: grid;
   place-content: center;
 
