@@ -151,6 +151,7 @@ export default {
   display: flex;
   padding: 7rem 4rem 0rem;
   position: relative;
+  height: 85vh;
 
   .img {
     &__arrow {
