@@ -90,7 +90,7 @@ export default {
 
     .subheader {
       width: 45%;
-      margin: 1rem auto;
+      margin: 0 auto;
     }
   }
 
