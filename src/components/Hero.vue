@@ -24,7 +24,7 @@
         <figure class="profile-img">
           <img
             class="img"
-            src="../assets/images/profile-img.svg"
+            src="../assets/images/profile-img.jpg"
             alt="Profile"
           />
         </figure>
@@ -181,15 +181,17 @@ export default {
 
     &__header {
       @include a.header;
+      max-width: 80%;
     }
 
     &__text {
-      width: 85%;
+      max-width: 80%;
     }
 
     &-btn {
-      display: flex;
+      display: inline-flex;
       gap: 1rem;
+      max-width: fit-content;
 
       .btn {
         padding: 0.75rem 1.75rem;
@@ -230,8 +232,11 @@ export default {
       position: relative;
       left: 10rem;
       top: -2rem;
+      height: 9.2rem;
+      width: 9.2rem;
+      border-radius: 0.5rem;
 
-      &-img {
+      .profile-img {
         position: absolute;
         left: 7.5rem;
         top: -1.5rem;
@@ -245,10 +250,11 @@ export default {
         .img {
           height: 100%;
           width: 100%;
+          border-radius: 50%;
         }
       }
 
-      &-box {
+      .profile-box {
         position: absolute;
         border: 1px solid a.$secondary-clr;
         border-radius: 0.5rem;
