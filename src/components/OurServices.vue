@@ -89,8 +89,9 @@ export default {
     }
 
     .subheader {
+      @include a.subheader;
       width: 45%;
-      margin: 0 auto;
+      margin: 0.5rem auto;
     }
   }
 

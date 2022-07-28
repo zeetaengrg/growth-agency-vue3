@@ -10,7 +10,7 @@
     </figure>
     <section aria-labelledby="hero-text" class="left-col">
       <h1 id="hero-text" class="left-col__header">Tell a better brand story</h1>
-      <p class="left-col__text">
+      <p class="left-col__subheader">
         Warrant present garrets limited cordial in inquiry to. Supported me
         sweetness behaviour shameless excellent so arranging.
       </p>
@@ -184,8 +184,9 @@ export default {
       max-width: 80%;
     }
 
-    &__text {
-      max-width: 80%;
+    &__subheader {
+      @include a.subheader;
+      max-width: 90%;
     }
 
     &-btn {

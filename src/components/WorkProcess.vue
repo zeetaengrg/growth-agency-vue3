@@ -17,6 +17,9 @@
               alt="union"
             />
           </figure>
+          <div class="box-content">
+            <div class="info"></div>
+          </div>
         </div>
       </article>
     </section>
@@ -57,7 +60,7 @@
 
   @mixin box {
     background-color: a.$primary-clr-4;
-    height: 31rem;
+    /* height: 29rem; */
     width: 31rem;
     border-radius: 1rem;
   }
@@ -71,6 +74,11 @@
     .work-header {
       .header {
         @include a.header;
+      }
+
+      .subheader {
+        @include a.subheader;
+        margin: 0.5rem auto;
       }
     }
 

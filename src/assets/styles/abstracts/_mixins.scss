@@ -9,3 +9,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+// Subheader Mixin
+@mixin subheader {
+  line-height: 1.5;
+}
