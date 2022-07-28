@@ -114,7 +114,7 @@ export default {
       padding: 1.5rem;
 
       .card-icon {
-        background-color: #eceeff;
+        background-color: a.$primary-clr-4;
         border-radius: 50%;
         height: 2.25rem;
         width: 2.25rem;
