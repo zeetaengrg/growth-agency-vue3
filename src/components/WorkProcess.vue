@@ -1,12 +1,49 @@
 <template>
   <section class="work">
-    <header class="work-header">
-      <h1 class="header">How It Works?</h1>
-      <p class="subheader">
-        Resolving neglected sir tolerably but existence conveying for. Day his
-        put off unaffected literature partiality inhabiting.
-      </p>
-    </header>
+    <section class="left-col">
+      <header class="work-header">
+        <h1 class="header">How It Works?</h1>
+        <p class="subheader">
+          Resolving neglected sir tolerably but existence conveying for. Day his
+          put off unaffected literature partiality inhabiting.
+        </p>
+      </header>
+      <article class="box-one">
+        <div class="box">
+          <figure class="img">
+            <img
+              class="img__union"
+              src="../assets/images/union.svg"
+              alt="union"
+            />
+          </figure>
+        </div>
+      </article>
+    </section>
+    <section class="right-col">
+      <article class="box-two">
+        <div class="box">
+          <figure class="img">
+            <img
+              class="img__union"
+              src="../assets/images/union.svg"
+              alt="union"
+            />
+          </figure>
+        </div>
+      </article>
+      <article class="box-three">
+        <div class="box">
+          <figure class="img">
+            <img
+              class="img__union"
+              src="../assets/images/union.svg"
+              alt="union"
+            />
+          </figure>
+        </div>
+      </article>
+    </section>
   </section>
 </template>
 
@@ -14,13 +51,67 @@
 @use "../assets/styles/abstracts" as a;
 
 .work {
-  .work-header {
-    .header {
-      @include a.header;
+  display: flex;
+  padding: 1rem 8rem;
+  gap: 5rem;
+
+  @mixin box {
+    background-color: a.$primary-clr-4;
+    height: 31rem;
+    width: 31rem;
+    border-radius: 1rem;
+  }
+
+  .left-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .work-header {
+      .header {
+        @include a.header;
+      }
     }
 
-    .subheader {
-      width: 45%;
+    .box-one {
+      @include box;
+      .box {
+        .img {
+          .img__union {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .right-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .box-two {
+      @include box;
+      .box {
+        .img {
+          .img__union {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .box-three {
+      @include box;
+      .box {
+        .img {
+          .img__union {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
