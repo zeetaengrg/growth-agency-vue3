@@ -1,50 +1,42 @@
 <template>
   <section class="work">
-    <section class="left-col">
-      <header class="work-header">
-        <h1 class="header">How It Works?</h1>
-        <p class="subheader">
-          Resolving neglected sir tolerably but existence conveying for. Day his
-          put off unaffected literature partiality inhabiting.
-        </p>
-      </header>
-      <article class="box-one">
-        <div class="box">
-          <figure class="img">
-            <img
-              class="img__union"
-              src="../assets/images/union.svg"
-              alt="union"
-            />
-          </figure>
-          <div class="box-content">
-            <div class="info"></div>
-          </div>
+    <section class="work-left">
+      <h1 class="work-left__header">How It Works?</h1>
+      <p class="work-left__subheader">
+        Resolving neglected sir tolerably but existence conveying for. Day his
+        put off unaffected literature partiality inhabiting.
+      </p>
+      <article class="work-left-card">
+        <figure>
+          <img
+            class="work-left-card__img"
+            src="../assets/images/union.svg"
+            alt="union"
+          />
+        </figure>
+        <div class="box-content">
+          <div class="info"></div>
         </div>
       </article>
     </section>
-    <section class="right-col">
-      <article class="box-two">
-        <div class="box">
-          <figure class="img">
-            <img
-              class="img__union"
-              src="../assets/images/union.svg"
-              alt="union"
-            />
-          </figure>
-        </div>
+    <section class="work-right">
+      <article class="work-right-card">
+        <figure>
+          <img
+            class="work-right-card__img"
+            src="../assets/images/union.svg"
+            alt="union"
+          />
+        </figure>
       </article>
-      <article class="box-three">
-        <div class="box">
-          <figure class="img">
-            <img
-              class="img__union"
-              src="../assets/images/union.svg"
-              alt="union"
-            />
-          </figure>
-        </div>
+      <article class="work-right-card">
+        <figure>
+          <img
+            class="work-right-card__img"
+            src="../assets/images/union.svg"
+            alt="union"
+          />
+        </figure>
       </article>
     </section>
   </section>
@@ -58,67 +50,48 @@
   padding: 1rem 8rem;
   gap: 5rem;
 
-  @mixin box {
+  @mixin card {
     background-color: a.$primary-clr-4;
     /* height: 29rem; */
     width: 31rem;
     border-radius: 1rem;
   }
 
-  .left-col {
+  .work-left {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
-    .work-header {
-      .header {
-        @include a.header;
-      }
-
-      .subheader {
-        @include a.subheader;
-        margin: 0.5rem auto;
-      }
+    &__header {
+      @include a.header;
     }
 
-    .box-one {
-      @include box;
-      .box {
-        .img {
-          .img__union {
-            width: 100%;
-          }
-        }
+    &__subheader {
+      @include a.subheader;
+    }
+
+    .work-left-card {
+      @include card;
+      margin-top: 1rem;
+
+      &__img {
+        width: 100%;
       }
     }
   }
 
-  .right-col {
+  .work-right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 
-    .box-two {
-      @include box;
-      .box {
-        .img {
-          .img__union {
-            width: 100%;
-          }
-        }
-      }
-    }
+    .work-right-card {
+      @include card;
 
-    .box-three {
-      @include box;
-      .box {
-        .img {
-          .img__union {
-            width: 100%;
-          }
-        }
+      &__img {
+        width: 100%;
       }
     }
   }
