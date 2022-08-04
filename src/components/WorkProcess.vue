@@ -1,44 +1,65 @@
 <template>
-  <section class="work">
-    <section class="work-left">
-      <h1 class="work-left__header">How It Works?</h1>
-      <p class="work-left__subheader">
+  <section class="work" id="work-container">
+    <section class="work__left-col" aria-labelledby="header">
+      <h1 class="work__header" id="header">How It Works?</h1>
+      <p class="work__subheader">
         Resolving neglected sir tolerably but existence conveying for. Day his
         put off unaffected literature partiality inhabiting.
       </p>
-      <article class="work-left-card">
-        <figure>
-          <img
-            class="work-left-card__img"
-            src="../assets/images/union.svg"
-            alt="union"
-          />
-        </figure>
-        <div class="box-content">
-          <div class="info"></div>
-        </div>
-      </article>
+      <section class="work__card" id="card-container">
+        <section id="card-top-content">
+          <article class="work__card-content">
+            <div class="work__bar-one"></div>
+            <div class="work__bar-two"></div>
+            <figure class="work__img-wrapper">
+              <img
+                src="../assets/images/2.jpg"
+                alt="profile"
+                class="work__profile-img"
+              />
+              <div class="work__bar-three"></div>
+            </figure>
+          </article>
+          <article class="work__card-content">
+            <figure class="work__icon-wrapper">
+              <font-awesome-icon icon="fa-solid fa-angle-down" />
+            </figure>
+            <div class="work__bar-four"></div>
+          </article>
+        </section>
+        <article class="work__card-info">
+          <h2 class="work__card-header">Intelligence</h2>
+          <p class="work__card-desc">
+            Marketing intelligence (MI) is the everyday information relevant to
+            a company's markets
+          </p>
+        </article>
+      </section>
     </section>
-    <section class="work-right">
-      <article class="work-right-card">
-        <figure>
-          <img
-            class="work-right-card__img"
-            src="../assets/images/union.svg"
-            alt="union"
-          />
-        </figure>
-      </article>
-      <article class="work-right-card">
-        <figure>
-          <img
-            class="work-right-card__img"
-            src="../assets/images/union.svg"
-            alt="union"
-          />
-        </figure>
-      </article>
+    <section class="work__right-col" id="right-container">
+      <section class="work__card" id="card-container">
+        <section id="card-top-content">
+          <article class="work__card-content">
+            <figure class="work__img-wrapper">
+              <img src="" alt="" />
+            </figure>
+          </article>
+        </section>
+      </section>
+      <section class="work__card" id="card-container"></section>
     </section>
+    <figure class="work__aside">
+      <img
+        class="work__aside-star"
+        src="../assets/images/star.svg"
+        alt="Star"
+      />
+      <img
+        class="work__aside-arrow"
+        src="../assets/images/arrow-direction.svg"
+        alt="Arrow"
+      />
+    </figure>
   </section>
 </template>
 
