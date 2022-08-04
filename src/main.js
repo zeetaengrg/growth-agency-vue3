@@ -18,6 +18,7 @@ import {
   faPaintRoller,
   faGlobe,
   faPenToSquare,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* /* add each imported icon to the library */
@@ -29,7 +30,8 @@ library.add(
   faShieldHalved,
   faPaintRoller,
   faGlobe,
-  faPenToSquare
+  faPenToSquare,
+  faAngleDown,
 );
 
 const app = createApp(App);
