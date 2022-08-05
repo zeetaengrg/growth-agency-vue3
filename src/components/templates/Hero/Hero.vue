@@ -209,25 +209,25 @@ export default {
         font-weight: a.$fw-medium;
         font-size: a.$fs-small;
         cursor: pointer;
+      }
 
-        &__primary {
-          color: a.$secondary-clr;
-          background: a.$bg-gradient;
-        }
+      .btn__primary {
+        color: a.$secondary-clr;
+        background: a.$bg-gradient;
+      }
 
-        &__secondary {
-          background: a.$bg-gradient;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          border: 1px solid transparent;
-          border-image: linear-gradient(
-            to right,
-            hsla(269, 94%, 69%, 1),
-            hsla(18, 82%, 69%, 1)
-          );
-          border-image-slice: 1;
-        }
+      .btn__secondary {
+        background: a.$bg-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid transparent;
+        border-image: linear-gradient(
+          to right,
+          hsla(269, 94%, 69%, 1),
+          hsla(18, 82%, 69%, 1)
+        );
+        border-image-slice: 1;
       }
     }
   }
