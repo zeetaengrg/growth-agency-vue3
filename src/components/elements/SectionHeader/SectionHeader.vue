@@ -25,9 +25,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../../assets/styles/abstracts" as a;
+@use "@/assets/styles/abstracts" as a;
 .header {
   text-align: center;
+  width: 62%;
+  margin: 0 auto;
 
   .header__title {
     @include a.header;
@@ -35,7 +37,7 @@ export default {
 
   .header__subtitle {
     @include a.subheader;
-    width: 45%;
+    width: 65%;
     margin: 0.5rem auto;
   }
 }
