@@ -19,6 +19,8 @@ import {
   faGlobe,
   faPenToSquare,
   faAngleDown,
+  faLocationDot,
+  faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* /* add each imported icon to the library */
@@ -32,6 +34,8 @@ library.add(
   faGlobe,
   faPenToSquare,
   faAngleDown,
+  faLocationDot,
+  faCircle
 );
 
 const app = createApp(App);
