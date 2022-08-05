@@ -1,28 +1,51 @@
 <template>
-  <Navbar />
-  <Hero />
-  <Clients />
-  <OurServices />
-  <WorkProcess />
+  <div class="home">
+    <Hero />
+    <Clients />
+    <OurServices />
+    <WorkProcess />
+    <Pricing />
+    <Testimonials />
+    <PortfolioStat />
+    <Newsletter />
+    <Footer />
+  </div>
 </template>
 
 <script>
 import {
-  Navbar,
   Hero,
   Clients,
   OurServices,
   WorkProcess,
+  Pricing,
+  Testimonials,
+  PortfolioStat,
+  Newsletter,
+  Footer,
 } from "@/components/templates";
 
 export default {
   name: "Home",
   components: {
-    Navbar,
     Hero,
     Clients,
     OurServices,
     WorkProcess,
+    Pricing,
+    Testimonials,
+    PortfolioStat,
+    Newsletter,
+    Footer,
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@use "@/assets/styles/abstracts" as a;
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+</style>
