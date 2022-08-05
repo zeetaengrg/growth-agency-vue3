@@ -21,7 +21,18 @@ import {
   faAngleDown,
   faLocationDot,
   faCircle,
+  faCircleCheck,
+  faStar,
+  faStarHalf,
+  faArrowRightLong,
+  faArrowLeftLong,
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 /* /* add each imported icon to the library */
 library.add(
@@ -35,7 +46,16 @@ library.add(
   faPenToSquare,
   faAngleDown,
   faLocationDot,
-  faCircle
+  faCircle,
+  faCircleCheck,
+  faStar,
+  faStarHalf,
+  faArrowLeftLong,
+  faArrowRightLong,
+  faPlay,
+  faFacebookF,
+  faInstagram,
+  faYoutube
 );
 
 const app = createApp(App);
