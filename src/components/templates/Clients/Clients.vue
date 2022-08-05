@@ -20,7 +20,6 @@
 @use "@/assets/styles/abstracts" as a;
 
 .clients {
-  height: 35vh;
   display: grid;
   place-content: center;
 
