@@ -1,4 +1,5 @@
 <template>
+  <Navbar />
   <Hero />
   <Clients />
   <OurServices />
@@ -6,11 +7,18 @@
 </template>
 
 <script>
-import { Hero, Clients, OurServices, WorkProcess } from "@/components";
+import {
+  Navbar,
+  Hero,
+  Clients,
+  OurServices,
+  WorkProcess,
+} from "@/components/templates";
 
 export default {
   name: "Home",
   components: {
+    Navbar,
     Hero,
     Clients,
     OurServices,
@@ -18,4 +26,3 @@ export default {
   },
 };
 </script>
-
