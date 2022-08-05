@@ -3,3 +3,8 @@ export { default as Navbar } from "./Navbar/Navbar.vue";
 export { default as Clients } from "./Clients/Clients.vue";
 export { default as OurServices } from "./OurServices/OurServices.vue";
 export { default as WorkProcess } from "./WorkProcess/WorkProcess.vue";
+export { default as Pricing } from "./Pricing/Pricing.vue";
+export { default as Testimonials } from "./Testimonials/Testimonials.vue";
+export { default as PortfolioStat } from "./PortfolioStat/PortfolioStat.vue";
+export { default as Newsletter } from "./Newsletter/Newsletter.vue";
+export { default as Footer } from "./Footer/Footer.vue";
