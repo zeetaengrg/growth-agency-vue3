@@ -130,11 +130,6 @@ export default {
         display: flex;
         justify-content: space-between;
         gap: 3rem;
-
-        li {
-          .footer__link {
-          }
-        }
       }
     }
 
